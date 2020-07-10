@@ -1,0 +1,14 @@
+    
+<launch>
+   <node pkg="rosserial_python" type="serial_node.py" name ="base_controller" output="screen" >
+    </node>
+    <include file="$(find razor_imu_9dof)/launch/razor-pub.launch">
+    </include>
+   <include file="$(find nmea_navsat_driver)/launch/nmea_serial_driver.launch">
+    </include>
+    <include file="$(find rplidar_ros)/launch/rplidar_s1.launch">
+    </include>
+</launch>
+
+
+
