@@ -12,6 +12,6 @@ Function：履带车运行程序
 运行：
 1、履带车底盘驱动程序---rosrun rosserial_python serial_node
 2、激光雷达驱动程序-----roslaunch rplidar_ros rplidar_s1.launch
-3、惯性元件IMU驱动程序---roslaunch nmea_navsat_driver  nmea_serial_driver.launch
-4、GPS元件驱动程序----roslaunch razor_imu_9dof  razor-pub.launch
+3、惯性元件GPS驱动程序---roslaunch nmea_navsat_driver  nmea_serial_driver.launch
+4、IMU元件驱动程序----roslaunch razor_imu_9dof  razor-pub.launch
 
